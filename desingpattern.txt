@@ -1,0 +1,158 @@
+------singleton-------
+
+class.forName()is used to load the the class;
+
+//early initialization
+
+final class singleton
+{
+	static private final singleton s1= new singleton();
+	private singleton()
+	{
+	}
+	public static singleton getobj()
+	{
+	return s1;
+	}
+}
+
+//lazy initialization
+
+final class singleton
+{
+	private static singleton  s1=null;
+	private singleton()
+	{
+	}
+	public static singleton getobj()
+	{
+		if(S1==null)
+		{
+		s1= new singleton();
+		}
+	}
+}
+
+this instanceof B used to find whether it is call by sub class constructor
+
+-----------16/01/2025-----------
+
+factory method
+
+object is created and allocated  before construction assign value is by constructor
+
+method is used for creating the object and the factory is for provide how many object can be defined was declared inside the method
+
+class factory{
+	static int count=0;
+	private static factory obj=new factory();
+	private factory()
+	{
+	}
+	public static factory geobj()
+	{
+		if(count<=5)
+		{
+			return obj;
+		}
+	}
+}
+
+only createobject of car,bike,van......
+
+-------abstract factory--------
+
+factory of factory => abstract factory
+
+can contains factory classes
+
+
+
+----------prototype----------
+prototype is of creating object of already existing object
+
+A obj1 = new a();
+A obj2=obj1.clone(); <= A obj4=obj1 this is better
+A obj3=obj1.clone();
+clone ==>byte by byte copy of that object and assign
+
+----------builder--------------
+
+depending on the property object is created
+object is created based on the property
+
+stream is used to call method().method().method()....
+
+creational patter ==> singleton,factory,abstractfactory,builder,prototype
+
+vehicle v1=vehicle.setFuel("petrol").setWheels(4).setSeats(2)...
+
+-----------structural Design pattern------------
+
+-----Adapter------
+
+almost similar are not related class in which interaction between these class is through the adapter design pattern
+
+connecting the dissimilar class
+
+interface swtich
+{
+}
+class fan implements switch
+{
+}
+class bulb
+{
+}
+
+------bridge-----
+class wire is like bridge
+{
+	public void on(Switch s,Fan f)
+	{
+	}
+}
+
+-----decorator-----
+Scanner sc = new Scanner(new FileInputStream(new File("c:/xyz/abc.txt")));
+
+--------proxy--------
+some entity acting for someone else
+
+--------delegator-------
+****chain of responsibility***
+like if some one it not there it is for replacing 
+A if a is not available
+B b is available
+C
+D
+
+delegator design example is 
+
+ATM machine
+
+a->b->c->d
+
+withdraw500notes(int amount){
+	int amount= amount/500;
+	int amt = amount%500;
+    if(amt!=0)
+	{
+		withdraw200();
+	}
+}
+withdraw200notes(int amount){
+	int amount= amount/500;
+	int amt = amount%500;
+    if(amt!=0)
+	{
+		withdraw100();
+	}
+}
+
+-------template------
+
+-----strategy------
+this pattern is designed of the term algorithm design pattern
+
+
