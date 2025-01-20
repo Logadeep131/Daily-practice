@@ -1,0 +1,72 @@
+------17/01/2025---------
+
+multitasking -> multithreading
+
+
+-------multithreading-------
+
+multithreading is in single program i maximize the resource utilization
+
+example google chrome multi tab are multithreading
+
+--------multitasking--------
+
+for different application to be executed simultaneously then go for multitasking
+
+opening vscode chrome notepad extra different app 
+
+
+***multithreading***
+
+methods 
+
+run():to execute the program/create the thread
+yield():
+stop(): terminate the thread
+
+----BLOCKED----
+sleep(): block the thread for some time wakeup automatically
+suspend(): blocking the thread on condition
+wait(): "" 
+resume(): suspended thread restart
+notify():  wait thread is getting notification to wakeup
+notifyAll(): this is for all thread
+
+Wait notify notifyAll it is coming from object class
+
+suspend is comes from the thread class
+
+wait and notify are the method used in synchronized block
+
+
+[Thread-0,5,main] 
+main =>this thread create reamaing thread like parent thread
+5 => provide the priority
+
+this keyword provide the details of the thread
+this.getName() | getName() is used to provide the complete thread.
+Thread.currentThread().getName()
+
+join method is wait until previous one complete like
+
+a1.join() // a1 thread then the main thread will wait until a1 complete
+
+Runnable interface
+
+sync
+one thread enter means it should complete it process and then only the next thread able to run
+
+
+Demon thread: example clock 
+
+to make thread Deamon   t2.setDaemon(true);
+Daemon is background thread and it get the least priority
+
+grouping the thread
+
+ThreadGroup tg= new Thread(tg,new A());
+
+grouping the thread
+if similar kind of the job is done for more number of the thread then we can club/group the thread
+
+ThreadGroup tg = new Thread(tg,new a());
