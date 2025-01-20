@@ -1,0 +1,128 @@
+8/1/25
+
+raise salary will increase all the salary of particular destination
+proide option for create destination
+
+display should display all the employee data
+
+main method is to be design like client side
+
+class doesn't contain dsa declared in it
+ex employee has no employee list
+
+Emp emp[] = new Emp[100] it just hold the space not occupy the memory
+
+object only alocate memory
+
+---------------------------------------------------------
+interface in java
+
+abstract can be with or without abstract method in it
+
+abstract class a{
+public abstract void abc()
+}
+interface class a{
+public abstract void abc()
+}
+
+similary like abstract class interface method should compelsary define in class which implements
+
+interface variables are static in default public|static|final (const)
+
+interface provide the rule for the implementation ****
+interface is not like inheritance 
+
+interface can extends multiple interfaces but class cant
+
+example interface extends interface is the multiple inheritance
+
+in which method dont have the body it simply define this method is to implement with body in class 
+
+byte || executable code can be decomiled back so it can be hackable 
+interface is used in that place
+
+interface provide the abstraction
+interface is to interact by user
+
+--code for interface--
+1.abstraction
+2.security
+3.java.sql.Connection is interface
+java.sql.ResultSet|Statement|Connection
+api used in jdbc is interface
+
+depends on driver we can connect database
+
+compulsarly define value for the variable because it public static final
+
+public abstract is default method for interface and no body{}****
+
+interface extends multiple interface it inherit the parent interface provide resusability 
+
+without implementing the interface can able to access the variable since it is        public
+
+interface dont have constructor it just have a methods();
+
+----------------------------------
+constructor vs method
+
+constructor and method are both similar
+one and only difference is method is called multipe times but constructor is called only once [that should be invoke only once]
+
+------------------------------
+abstract class vs interface
+
+interface is faster/memory space is less occupied 
+
+Marker interface{}
+it just marking something  
+rmi remote interface 
+
+functional interface
+one and only abstract method compulsorly implemented
+ex runnable.comparable
+
+ --marker  
+interface i{
+}
+--functional interface
+ interface j{
+public void abc();
+}
+--general/normal interface
+interface k
+{
+public void abc();
+public void atob();	
+}
+
+--------
+Access Modifier
+public 
+private
+protected
+default 
+
+public class can be accessed by all the class in same or different package
+
+class can have only public or default
+access specifier
+
+no private or protected info for class
+
+
+default provide the class to accessible by the class in the same package (default package protected)
+
+****public by all the packages
+****default by same package only
+
+protected variable access by all the class in same package and as well extend by some other class in different package
+
+defult variable acces by all the class in same package
+
+public a b c d e f
+private a
+protected a b c e f
+int abc //default is accessed by the same package only 
+
