@@ -1,0 +1,156 @@
+java 17
+git
+docker
+node js
+postman
+
+noun for class
+verb for method
+entity for variable
+
+is-A relationship means inheritance
+has-A means association/composition
+
+oops is a concept
+ooad
+oosd
+ordbms some of the concepts
+
+encapsulation hiding the data using private scope 
+methods - public
+variable - private
+
+pure encapsulated class is all the variable is private and methods are public
+
+
+abstraction hiding the methodology/implementation
+
+polymorphism compile time (overloading), run time(overriding)
+
+overriding is have the same name and same parameters 
+
+superclass variable can create obj of subclass viseversa is not possible
+
+new a() //parent it will call its own constructor.
+new b() will call its constructor as will as parent class constructor
+
+static methods cant be overridden
+when both super and subclass is static method means
+
+abstract class can constructor it is called by the subclass constructor
+
+assignment
+employee management app
+clerk
+program
+manager 
+obj called(name,age,salary,destination)
+display()
+raiseslaray(name,++amount)
+{
+display the name and how much to increase decided by manager and displayed back
+}
+
+* class name start with capital letter
+* method name start with small letter
+* if more than one word then every next words first letter should be in cap
+* package names must be all in small letters no separation
+* constant names must all be in caps if more than one word then separated by underscore_.
+
+jdk compile source code to byte code
+jre byte code to machine code
+
+path where .class file exist classpath 
+path where executable file is exist path
+
+data types
+
+constant
+variables
+
+primitive :
+	Numeric :
+		whole: byte(1),short,int,long(4)
+		real : float(4),double(8)
+	non numeric
+		char(2) ascii,unicode java follows this one 
+		Boolean(1)
+non primitive
+	array class interface Enum
+
+integer in which there is no short int and long int it is simply short
+no unsigned keyword in java
+
+float + int works (5 + a) a =3.142
+float a= (float) 3.142 || 3.142f || 3.142F
+
+similarly for mention long a= 1234568798l || L this should be mention as suffix
+
+if(-1 || 1 || 0) not work it gives error
+
+const no keywords instead of that use final
+
+>> divide by 2
+>>> is used to convert the + to - and - to + of the number >>> one left shift + changing the lsb
+<< multiple by 2
+
+class name and file name should be same when public class
+if i don't have public scope then it get compiled
+
+multiple class name with multiple main method is possible
+
+with main method just start the execution of program
+multiple main method provide option for start the program
+
+single java has multiple main method and single class can call multiple main method 
+
+javap for reading the class file. compiler provide the default constructor for a class {every constructor call super class constructor provide by compiler}
+
+if no value for the variable
+data type default statement
+num = 0 
+bool = false 
+char = blank
+
+new gives intial memory
+
+constructor gives the value for the variable
+
+this refer the current object 
+this is to distinguish between class variable and obj variable
+
+one constructor can call another constructor
+
+in which the constructor call must be as the first statement inside the constructor 
+
+object refer variable or object new provide memory address and its pointed by  object;
+
+r1 object reference variable holding the address
+
+//r1 and r2 both are objects
+r1 = r2
+r1 now point to the r2 objects value
+holding the address created by new
+
+Array of objects
+
+Person person[] = new Person[5];
+for(int i=0;i<person.length;i++)
+{
+	person[i] = new Person();
+	person[i].name = user[i]
+}
+
+array to create // arrays are object in java
+----------------
+int arr[] = new int[10]; 10integer value are stored
+
+rows are mandatory in java even column value not provided its compile.
+
+***jagged array---every row with different column
+
+single dimensional array combine with other 1d array to provide multidimensional array
+
+git repository----
+assignment
+Daily practice
