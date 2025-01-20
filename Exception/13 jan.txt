@@ -1,0 +1,100 @@
+-------13/01/2025 monday------------
+-----execption handling ------------
+
+
+if everything fine in compilation but still some error is called as runtime error
+
+compile == syntactical error
+
+------runtime error-------
+runtime == logical error
+
+logical error is of 2 types
+1.error
+2.exception
+
+error cannot be handled
+exception can be handled
+
+exception can be classified into two types 1.compile time exception/checked this is checked in the compile time 
+2.runtime exception/unchecked this is checked at the runtime 
+
+
+exception are come only under the runtime error
+
+if any syntax error it will not compile the code that is compile time error are syntax error
+
+runtime -> error -> exception
+
+in order to avoid the termination we use exception 
+
+----------try------------
+is the place that exception may be raised
+
+--------catch-------
+1.one catch can only catch one exception
+2.any order is fine for catching if the multiple catch block is there means
+
+generall catch(Exception e) handle all the causes
+
+catch( NullPointerExceptino | ArithmeticException |) | is used to and in sigle catch block with multiple exception 
+
+
+-------finally ------
+system.exit() is terminate the program,in this only case finally is not executed remaining all the case finally will work
+
+catch block not handle but finaly is after that means
+
+then finally will print and then the catch will terminate the program
+
+
+
+
+
+----------throw-------
+
+****try catch is used for checked exception ****
+unchecked exception is not mandatory to write in try catch 
+
+
+
+
+-------throws--------
+
+this is the method i m not going to handle,i pass to who calling it.
+
+*****class extends RuntimeException class then it unchecked class
+
+*****if class extends Exception class then it is checked class
+
+javap java.lang.NullPointerException 
+
+---------throws---------
+
+rmi remote exception 
+
+unreported exception occur for checked exception
+ex IOException and SQLExecption 
+
+public normaly try catch is used handle the exception must defined for the checked exception
+
+throw are used to pass the exception to the method that should handle this
+
+ jvm starts the main method so jvm has default handler 
+print the stack -> name the error -> terminate the program
+
+throws is re-throw the exception 
+
+good practice to handle the exception with try catch block
+
+unchecked exception are automatically passed need to mention the name in the throws...|| you can also mention it for the reading purose.
+
+if i have handler try and catch in main method 
+
+with throws key word i can throw it to the caller in which only the checked exception is to mention.
+
+try should definetly come with catch || finally
+
+in between any statement is not allowed try catch finally
+
+subclass to the super class exception order to be maintained
