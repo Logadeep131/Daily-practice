@@ -1,0 +1,117 @@
+----15/01/2025------
+
+immutable class
+
+object can be created once and it cant modify its variable or object not get modified
+
+final key word is used to not create inheritance
+
+this is used for provide more security for the object
+
+*******serializable is to convert to form the netword*****
+
+cloneable -- keyword
+cloneable is to override but cant able to copy
+
+hashcode is to create hash for the object
+
+// s1=object of some class means s1.hashcode()=provide the hashcode for the s1 object.
+
+equals method return true for false s1.equals(S2)
+this will check whether both the objects are same or not
+
+----condition----
+
+variable are final
+and class is also final
+serilizable to create network
+must implement few functions this and also in default it contains some method can be able to override
+
+java.lang.Record document is used to see the 
+hascode equals toString three method 
+
+****record Student(int roll,String name) -> this is the constructor there is no default constructor we have to mention constructor parameter or we have to declare default constructor inside the record class
+
+ 		**********
+
+record Student()
+{
+	static String SchoolName;
+	Student()
+	{
+		SchoolName="ABC"
+	}
+	Student(int rollno,String name,int standard)
+	{
+		this(); it will call the above constructor because we may have empty constructor.
+	}
+}
+
+record Student(int rollno,String name,int standard) this is canonical constructor
+
+final cant inherit
+
+some class can extend and some cant extend for this keyword is used is **sealed**
+
+sealed class Manager permits SalesManager
+
+1.permit keyword give permission to the subclass that can only inherit the super sealed class
+2.And the subclass is to be in final that should not be inherit by any other class
+
+
+-------short summary of first half 15 jan---------
+1.immutable class
+toString() hascode() equals()
+variable are final and class is final class
+
+2.records is canonical constructor
+ex record student(int a,String abc,int b) this is the immutable class provide int java 17 it default contain all the above method for immutable class
+
+3.cant inherit
+final class cant inherit 
+in case of only few case can access means sealed and permits are used
+
+normal class cant extend the sealed class
+non-sealed is to give as keyword it act similary like normal class why we provie is sealed class provide the permission to extend either we have to use
+1.final
+2.sealed
+3.non-sealed
+
+
+------2nd half---------
+
+variables in java
+var is used in java version 10
+
+var a=5
+System.out.println(a)
+var a="hi"
+System.out.println(a)
+float var=3.245f this is possible var can be declared as variable
+class var is not allowed // var is only allowed as local variable 
+var <- is not used as global datatype 
+
+int arr[] = new int[10];
+var arr= new int[5];
+
+------switch case------
+switch(//int and string are only allowed inside the switch case )
+
+Enum can be allowed in switch case
+Enum Month
+{
+	JAN,FEB,MAR,APR,MAY....
+}
+
+case JAN,FEB,MAR :
+case APR,MAY,JUN :
+case JUL,AUG,SEP :
+
+case -> this will automatically break when terminate
+
+case -> {//multiple statement you can put into body }
+
+case -> "Summer" this will simply return the string 
+
+String weater = switch(Month.FEB)
+switch -> int,char,string,enum, and return statement
