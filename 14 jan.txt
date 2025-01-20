@@ -1,0 +1,75 @@
+-------14/01/2025--------
+
+Connection con;
+PreparedStatement pstmt;
+ResultSet rs;
+try{
+con=DriverMangaer.getConnection();
+pstmt=con.prepareStatement();
+rs=pstmt.executeQuery();
+}
+catch(SQLException e)
+{
+}
+finaly()
+{
+con.close();
+rs.close();
+pstmt.close();
+}
+t
+ry with round bracket try() automatically it close the resource open inside the try block.
+no need to declare finally() and close separately
+
+if in this case like 
+A Aobj=null;
+try{
+Aobj = new A()
+}
+it will create heap memory when multiple object is created means memory out of space
+
+try() only auto closable clas can pass to the try with round bracket
+
+if class implements readable and closable then it can 
+be send to the try();
+
+custom made class which implements the AutoClosable and the close method to be defined();
+so try() can be used for creating src and can close automatically
+
+a created 
+b created
+release is in reverse order first b then a is released
+
+*******even if exception it will release the allocation
+
+resource programming is to write with try( res alloc ){}
+finally and try() realloc is only not done in the System.exit();
+
+try must follow with catch and finally
+try with resource try() no need catch and finally;
+
+------2nd half-------
+
+pattern matching import java.util.regex.*;
+
+
+String s1 = "Wissen Technology";
+String s2 = "Tech";
+Pattern p1 = Pattern.complile(s2);
+Matcher m1 =p1.matcher(s1);
+
+System.out.println(m1.find());
+[a-zA-Z0-9.]+@[a-zA-Z]+\.[a-zA-Z]+
+
+pattern.compile () in which we have to pass the string or regex into this are patter we want to search for to be specified in this
+
+p1.matcher() -> in which this is the string 
+
+m1.find() -> true/false bool will return
+
+
+[a-d[b-f]] this is union
+[a-d&&[b-f]] this is intersection
+
+name should not contain which is not a letter maximum can two word space is there capital
+
